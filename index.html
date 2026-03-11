@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Death by AI</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roblox-ish Demo</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🤖 Death by AI</h1>
-    <p id="story">Voer je naam in om te beginnen.</p>
-
-    <input id="nameInput" type="text" placeholder="Jouw naam...">
-    <button id="startBtn">Start</button>
-
-    <div id="choices" class="choices hidden"></div>
-    <div id="result" class="result"></div>
+  <div id="ui">
+    <h1>Roblox-ish demo</h1>
+    <p>WASD / Arrow keys to move, Space to jump, R to reset position</p>
+    <p>Hosted with GitHub Pages — enjoy!</p>
   </div>
-  
-  <!-- Discord Embedded App SDK -->
-  <script src="https://unpkg.com/@discord/embedded-app-sdk@latest/dist/index.js"></script>
+  <canvas id="c"></canvas>
+
+  <!-- Three.js (build with global THREE) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
